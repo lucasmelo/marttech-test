@@ -1,0 +1,45 @@
+<div class="card" *ngFor="let produto of produtos;">
+    <div class="container-produtos">
+        <div class="imagem">
+            <img src="assets/produtos/{{ produto.imagemProduto }}.png" />
+        </div>
+
+        <div class="descricao">
+            <span>
+                {{produto.descricao}}
+            </span>
+        </div>
+
+        <div class="preco">
+            <span class="valor">
+                {{produto.valor | currency: 'BRL': true}}
+            </span>
+        </div>
+
+
+        <!-- <div class="cart-box">
+            <div class="cart" matTooltip="Adicionar ao carrinho" (click)="adicionarItemCarrinho(produto)">
+                <mat-icon>add_shopping_cart</mat-icon>
+            </div>
+
+            <input type="text" class="cart-input" disabled />
+
+            <div class="cart" matTooltip="Remover do carrinho" (click)="removerItemCarrinho(produto)">
+                <mat-icon>remove_shopping_cart</mat-icon>
+            </div>
+        </div> -->
+
+        <div class="button-box">
+
+            <button mat-stroked-button color="primary">
+                <mat-icon> attach_money</mat-icon>
+                Comprar
+            </button>
+            <button mat-stroked-button color="primary" (click)="adicionarItemCarrinho(produto)">
+                <mat-icon>add_shopping_cart</mat-icon>
+                Carrinho
+            </button>
+        </div>
+
+    </div>
+</div>
