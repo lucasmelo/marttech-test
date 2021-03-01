@@ -7,13 +7,14 @@
         </div>
 
         <div class="flex-center">
-            <div class="cart">
-                <div class="items-cart">
-                    {{StorageService.QtdItensNoCarrinho || 0}}
+            <a routerLink="/carrinho">
+                <div class="cart">
+                    <div class="items-cart">
+                        {{qtdItens || 0}}
+                    </div>
+                    <mat-icon>shopping_cart</mat-icon>
                 </div>
-                <mat-icon>shopping_cart</mat-icon>
-            </div>
-
+            </a>
         </div>
     </div>
 

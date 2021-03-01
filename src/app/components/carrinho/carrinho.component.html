@@ -1,1 +1,67 @@
-<p>carrinho works!</p>
+<app-header></app-header>
+<div class="carrinho-container">
+    <div class="back-box">
+        <div class="back-icon">
+            <a routerLink="/produtos">
+                <mat-icon>arrow_back</mat-icon>
+            </a>
+        </div>
+        <div class="back-text">
+            <a routerLink="/produtos">
+                <span>Voltar</span>
+            </a>
+        </div>
+
+    </div>
+    <p class="titulo">Meu Carrinho</p>
+
+    <div class="input-box">
+        <input type="text" [(ngModel)]="produtoFilter" placeholder="Busque por nome do cliente"/>
+    </div>
+
+    <div *ngFor="let item of items | filter: produtoFilter;" class="item">
+        <div>
+            <div>
+                <span class="produto">
+                    {{item.descricao}}
+                </span>
+            </div>
+
+            <div>
+                <img src="assets/produtos/{{ item.imagemProduto }}.png" />
+            </div>
+
+            <div class="cliente-box">
+                <span class="cliente">
+                    Cliente: <b> {{item.cliente}}</b>
+                </span>
+            </div>
+        </div>
+
+        <div class="flex-center">
+            <span class="valor">
+                {{item.valor | currency: 'BRL': true}}
+            </span>
+            <mat-icon matTooltip="Deletar {{item.descricao}}">delete_outline</mat-icon>
+        </div>
+
+    
+
+
+    </div>
+
+    <div class="total">
+        <div>
+            <span class="subtotal">
+                Subtotal: 
+            </span>
+        </div>
+
+        <div>
+            <span class="valor">
+                valor
+            </span>
+        </div>
+    </div>
+
+</div>

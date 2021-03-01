@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div class="card" *ngFor="let produto of produtos;">
     <div class="container-produtos">
         <div class="imagem">
@@ -16,25 +17,12 @@
             </span>
         </div>
 
-
-        <!-- <div class="cart-box">
-            <div class="cart" matTooltip="Adicionar ao carrinho" (click)="adicionarItemCarrinho(produto)">
-                <mat-icon>add_shopping_cart</mat-icon>
-            </div>
-
-            <input type="text" class="cart-input" disabled />
-
-            <div class="cart" matTooltip="Remover do carrinho" (click)="removerItemCarrinho(produto)">
-                <mat-icon>remove_shopping_cart</mat-icon>
-            </div>
-        </div> -->
-
         <div class="button-box">
 
-            <button mat-stroked-button color="primary">
+            <a mat-stroked-button color="primary" routerLink="/carrinho">
                 <mat-icon> attach_money</mat-icon>
                 Comprar
-            </button>
+            </a>
             <button mat-stroked-button color="primary" (click)="adicionarItemCarrinho(produto)">
                 <mat-icon>add_shopping_cart</mat-icon>
                 Carrinho

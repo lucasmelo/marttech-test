@@ -1,0 +1,98 @@
+.carrinho-container {
+  margin: 71px 22px 36px 19px;
+  box-shadow: rgb(17 17 26 / 10%) 0px 8px 24px,
+    rgb(17 17 26 / 10%) 0px 16px 56px, rgb(17 17 26 / 10%) 0px 24px 80px;
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  p.titulo {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .item {
+    height: 124px;
+    padding: 12px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px,
+      rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+    border-radius: 3px;
+    margin-bottom: 28px;
+  }
+
+  .back-box {
+    width: 200px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    .back-icon {
+      margin-right: 16px;
+    }
+    .back-text {
+    }
+  }
+
+  .item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    img {
+      width: 60px;
+      height: 60px;
+    }
+    span.valor {
+        font-weight: bold;
+        font-size: 22px;
+    }
+    span.produto {
+        font-size: 18px;
+    }
+
+    .flex-center{
+        display: flex;
+        align-items: center;
+    }
+
+    mat-icon {
+        margin: 8px;
+    }
+  }
+
+  .total {
+      display: flex;
+      justify-content: flex-end;
+      span {
+          font-size: 32px;
+          font-weight: bold;
+      }
+      span.subtotal {
+          margin-right: 8px;
+      }
+      span.valor {
+          margin-right: 8px;
+      }
+      span.cliente {
+        margin-top: 20px;
+      }
+  }
+  .cliente-box {
+    margin-top: 20px
+  }
+
+  .input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      margin: 16px;
+    height: 25px;
+    width: 50%;
+    padding: 8px;
+    }
+  }
+}

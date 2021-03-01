@@ -3,4 +3,5 @@ export class Produtos {
     descricao: string;
     valor: number;
     imagemProduto: string;
+    cliente: string;
 }

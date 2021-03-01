@@ -1,6 +1,6 @@
 import { Produtos } from "./Produtos";
 
 export class Carrinho {
-    itensNoCarrinho: number = 0;
+    itensNoCarrinho: number;
     item: Produtos
 }

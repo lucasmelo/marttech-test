@@ -1,12 +1,13 @@
 .container-navbar {
   box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 36px;
-  padding: 10px 42px 10px 20px;
-  margin-bottom: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    padding: 10px 42px 10px 20px;
+    margin-bottom: 32px;
+    background: #FFF;
   .content {
       display: flex;
       justify-content: space-between;
