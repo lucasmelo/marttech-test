@@ -19,13 +19,13 @@
 
         <div class="button-box">
 
-            <a mat-stroked-button color="primary" routerLink="/carrinho">
+            <a mat-stroked-button color="primary" routerLink="/carrinho" (click)="adicionarItemCarrinho(produto)">
                 <mat-icon> attach_money</mat-icon>
                 Comprar
             </a>
             <button mat-stroked-button color="primary" (click)="adicionarItemCarrinho(produto)">
                 <mat-icon>add_shopping_cart</mat-icon>
-                Carrinho
+                Adidionar ao Carrinho
             </button>
         </div>
 

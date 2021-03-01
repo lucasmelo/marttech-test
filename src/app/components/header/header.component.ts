@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
 
   qtdItens;
   dataSubscription: Subscription;
+  dataSubscriptionCart: Subscription;
 
   constructor(public StorageService: StorageService, public storage: StorageMap) { }
 

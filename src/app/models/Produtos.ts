@@ -4,4 +4,5 @@ export class Produtos {
     valor: number;
     imagemProduto: string;
     cliente: string;
+    qtd: number;
 }

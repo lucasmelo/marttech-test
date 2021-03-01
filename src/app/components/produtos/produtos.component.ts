@@ -24,6 +24,7 @@ export class ProdutosComponent implements OnInit {
         valor: 219.9,
         imagemProduto: 'kindle',
         cliente: 'João Silva',
+        qtd: 0,
       },
       {
         id: 1,
@@ -31,6 +32,7 @@ export class ProdutosComponent implements OnInit {
         valor: 1399,
         imagemProduto: 'tv',
         cliente: 'Carlos Perdeira',
+        qtd: 0,
       },
       {
         id: 2,
@@ -38,6 +40,7 @@ export class ProdutosComponent implements OnInit {
         valor: 4027,
         imagemProduto: 'pc',
         cliente: 'Pedro Bastos',
+        qtd: 0,
       },
       {
         id: 3,
@@ -45,6 +48,7 @@ export class ProdutosComponent implements OnInit {
         valor: 239,
         imagemProduto: 'caixa',
         cliente: 'Vitoria Souza',
+        qtd: 0,
       },
       {
         id: 4,
@@ -52,6 +56,7 @@ export class ProdutosComponent implements OnInit {
         valor: 9746,
         imagemProduto: 'cel',
         cliente: 'Paula Meirelles',
+        qtd: 0,
       },
       {
         id: 5,
@@ -59,6 +64,7 @@ export class ProdutosComponent implements OnInit {
         valor: 919.9,
         imagemProduto: 'monitor',
         cliente: 'Vanessa Fernandes',
+        qtd: 0,
       },
       {
         id: 6,
@@ -66,6 +72,7 @@ export class ProdutosComponent implements OnInit {
         valor: 219.9,
         imagemProduto: 'cadeira',
         cliente: 'Lucas Melo',
+        qtd: 0,
       },
       {
         id: 7,
@@ -73,6 +80,7 @@ export class ProdutosComponent implements OnInit {
         valor: 746.9,
         imagemProduto: 'home',
         cliente: 'Rodrigo Melo',
+        qtd: 0,
       },
       {
         id: 8,
@@ -80,6 +88,7 @@ export class ProdutosComponent implements OnInit {
         valor: 1199,
         imagemProduto: 'fone',
         cliente: 'Marcelo Francisco',
+        qtd: 0,
       },
       {
         id: 9,
@@ -87,6 +96,7 @@ export class ProdutosComponent implements OnInit {
         valor: 611,
         imagemProduto: 'cozinha',
         cliente: 'Fernando Paula',
+        qtd: 0,
       },
     ];
   }

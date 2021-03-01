@@ -27,22 +27,12 @@ export class CardsComponent implements OnInit {
 
   adicionarItemCarrinho(item: Produtos) {
     this.itensNoCarrinho++;
+
+    item.qtd++;
     
     this.items.push(item);
     this.StorageService.salvarItem('qtdItensCarrinho',this.itensNoCarrinho);
     this.StorageService.salvarItem('itensCarrinho',this.items);
-  }
-
-  removerItemCarrinho() {
-    this.itensNoCarrinho--;
-    this.StorageService.QtdItensNoCarrinho =
-      this.StorageService.QtdItensNoCarrinho - 1;
-
-    if (this.itensNoCarrinho > 0) {
-      this.StorageService.ExistemItensNoCarrinho = true;
-    } else {
-      this.StorageService.ExistemItensNoCarrinho = false;
-    }
   }
 
   irParaCheckout() {

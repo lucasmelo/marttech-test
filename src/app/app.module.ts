@@ -14,7 +14,9 @@ import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 import { NgxNavigationWithDataComponent } from "ngx-navigation-with-data";
 import { RouterModule } from '@angular/router';
 import { produtoFilterPipe } from './filters/produto.filter';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ModalFinalizarComponent } from './modal/modal-finalizar/modal-finalizar.component'; 
+import { NgxMaskModule, IConfig } from 'ngx-mask'
 
 
 registerLocaleData(localePt);
@@ -26,10 +28,12 @@ registerLocaleData(localePt);
     CardsComponent,
     ProdutosComponent,
     CarrinhoComponent,
-    produtoFilterPipe
+    produtoFilterPipe,
+    ModalFinalizarComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     // AppRoutingModule,
     FormsModule,
     CommonModule,
@@ -41,6 +45,7 @@ registerLocaleData(localePt);
       {path: '', redirectTo: '/produtos', pathMatch: 'full'},
 
     ]),
+    NgxMaskModule.forRoot(),
   ],
   providers: [{provide: LOCALE_ID, useValue: 'pt-BR'}, NgxNavigationWithDataComponent],
   bootstrap: [AppComponent]

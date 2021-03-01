@@ -1,0 +1,23 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit()" [formGroup]="FormDados">
+        <div>
+            <label for="nome">Nome Completo</label>
+
+            <input type="text" formControlName="Nome" placeholder="Nome completo" id="nome" />
+        </div>
+        <div>
+            <label for="cpf">CPF</label>
+
+            <input type="text" formControlName="CPF" placeholder="CPF" id="cpf" [mask]="cpf" />
+        </div>
+
+        <div>
+            <button type="submit">
+                Concluir compra
+            </button>
+        </div>
+
+
+    </form>
+
+</div>

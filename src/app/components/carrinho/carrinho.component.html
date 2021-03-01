@@ -19,6 +19,10 @@
         <input type="text" [(ngModel)]="produtoFilter" placeholder="Busque por nome do cliente"/>
     </div>
 
+    <div *ngIf="!items">
+        a
+    </div>
+
     <div *ngFor="let item of items | filter: produtoFilter;" class="item">
         <div>
             <div>
@@ -42,12 +46,10 @@
             <span class="valor">
                 {{item.valor | currency: 'BRL': true}}
             </span>
-            <mat-icon matTooltip="Deletar {{item.descricao}}">delete_outline</mat-icon>
+            <mat-icon matTooltip="Deletar {{item.descricao}}" (click)="deletaItem(item)">delete_outline</mat-icon>
+                {{item.qtd}}
+            <mat-icon matTooltip="Adicionar {{item.descricao}}" (click)="adicionaItem(item)">add</mat-icon>
         </div>
-
-    
-
-
     </div>
 
     <div class="total">
@@ -59,9 +61,15 @@
 
         <div>
             <span class="valor">
-                valor
+                {{resultado | currency: 'BRL': true || '0'}}
             </span>
         </div>
+    </div>
+
+    <div class="btn-box">
+        <button (click)="openDialog()">
+            Finalizar Pedido
+        </button>
     </div>
 
 </div>
